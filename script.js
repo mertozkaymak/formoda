@@ -15,7 +15,7 @@
 
             if(productParentId == 0){
                 
-                $.ajax({ url: "https://dev.digitalfikirler.com/formoda/queries.php", type: "POST", data: {
+                $.ajax({ url: "***/queries.php", type: "POST", data: {
                         variant: {
                             title: variantTitle,
                             productId: productId
@@ -31,7 +31,7 @@
             }
             else{
 
-                $.ajax({ url: "https://dev.digitalfikirler.com/formoda/queries.php", type: "POST", data: {
+                $.ajax({ url: "***/queries.php", type: "POST", data: {
                         variant: {
                             title: variantTitle,
                             productId: productParentId
