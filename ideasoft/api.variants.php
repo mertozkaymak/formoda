@@ -85,7 +85,7 @@
 
                         if(count($this->variants[$page][$variant]->images) > 0){
 
-                            $image = "https://formoda.com.tr/myassets/products/" . $this->variants[$page][$variant]->images[0]->directoryName . "/" . $this->variants[$page][$variant]->images[0]->filename . "." . $this->variants[$page][$variant]->images[0]->extension . "?revision=" . $this->variants[$page][$variant]->images[0]->revision;
+                            $image = "***myassets/products/" . $this->variants[$page][$variant]->images[0]->directoryName . "/" . $this->variants[$page][$variant]->images[0]->filename . "." . $this->variants[$page][$variant]->images[0]->extension . "?revision=" . $this->variants[$page][$variant]->images[0]->revision;
 
                             $smtp = $database->dbh->prepare("SELECT * FROM variants WHERE iid=?");
                             $smtp->execute(array($this->variants[$page][$variant]->id));
